@@ -15,10 +15,14 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('..\\keystore\\release.keystore')
-            storePassword KEYSTORE__KEY_PASSWORD
-            keyAlias "photopuzzle"
-            keyPassword KEYSTORE__KEY_PASSWORD
+            try {
+                storeFile file('..\\keystore\\release.keystore')
+                storePassword KEYSTORE_KEY_PASSWORD
+                keyAlias "photopuzzle"
+                keyPassword KEYSTORE_KEY_PASSWORD
+            } catch (ex) {
+                throw new InvalidUserDataException("You should define KEYSTORE_KEY_PASSWORD in gradle.properties.")
+            }
         }
         debug {
             storeFile file('..\\keystore\\debug.keystore')
