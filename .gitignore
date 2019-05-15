@@ -12,6 +12,9 @@
 bin/
 gen/
 out/
+.gradle/
+gradle/
+.idea/
 
 # Gradle files
 .gradle/
@@ -63,3 +66,7 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+/gradlew
+/gradlew.bat
+/local.properties
+/PhotoPuzzle.iml
