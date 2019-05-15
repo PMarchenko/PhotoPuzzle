@@ -70,3 +70,4 @@ fastlane/readme.md
 /gradlew.bat
 /local.properties
 /PhotoPuzzle.iml
+/gradle.properties
