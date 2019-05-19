@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.pmarchenko.photopuzzle.newpuzzle.PuzzleFieldView
+        android:id="@+id/puzzle_field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#123456"
+        android:animateLayoutChanges="true"
+        />
+
+    <Button
+        android:id="@+id/new_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/puzzle_field"
+        android:src="@drawable/ic_add_black_24dp"
+        android:text="+ row"
+        />
+
+    <Button
+        android:id="@+id/new_column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/puzzle_field"
+        android:layout_toEndOf="@+id/new_row"
+        android:src="@drawable/ic_add_black_24dp"
+        android:text="+ column"
+        />
+
+</RelativeLayout>

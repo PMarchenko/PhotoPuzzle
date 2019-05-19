@@ -3,6 +3,7 @@ package com.pmarchenko.photopuzzle
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.pmarchenko.photopuzzle.newpuzzle.NewPuzzleActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +15,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createNewPuzzle() {
-
+        NewPuzzleActivity.start(this)
     }
 }
